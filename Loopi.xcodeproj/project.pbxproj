@@ -8,11 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		90534C3724E5B65A0084F9A1 /* LoopiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90534C3624E5B65A0084F9A1 /* LoopiApp.swift */; };
-		90534C3924E5B65A0084F9A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90534C3824E5B65A0084F9A1 /* ContentView.swift */; };
 		90534C3B24E5B65E0084F9A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90534C3A24E5B65E0084F9A1 /* Assets.xcassets */; };
 		90534C3E24E5B65E0084F9A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90534C3D24E5B65E0084F9A1 /* Preview Assets.xcassets */; };
 		90534C4924E5B65E0084F9A1 /* LoopiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90534C4824E5B65E0084F9A1 /* LoopiTests.swift */; };
 		90534C5424E5B65F0084F9A1 /* LoopiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90534C5324E5B65F0084F9A1 /* LoopiUITests.swift */; };
+		90534C6424E5D8950084F9A1 /* SongsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90534C6324E5D8950084F9A1 /* SongsRowView.swift */; };
+		90534C6624E5D8CD0084F9A1 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90534C6524E5D8CD0084F9A1 /* Song.swift */; };
+		90534C6824E5DAA40084F9A1 /* testData.json in Resources */ = {isa = PBXBuildFile; fileRef = 90534C6724E5DAA30084F9A1 /* testData.json */; };
+		90534C6A24E5DE210084F9A1 /* SongsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90534C6924E5DE210084F9A1 /* SongsListView.swift */; };
+		90D4103224E5E1D90038C238 /* SongDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D4103124E5E1D90038C238 /* SongDetail.swift */; };
+		90D4103424E5FA5C0038C238 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D4103324E5FA5C0038C238 /* UserData.swift */; };
+		90D4103824E9B6C60038C238 /* better_ganondorf.wav in Resources */ = {isa = PBXBuildFile; fileRef = 90D4103524E9B6C10038C238 /* better_ganondorf.wav */; };
+		90D4103924E9B6C60038C238 /* better_ganondorf.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90D4103624E9B6C30038C238 /* better_ganondorf.mp3 */; };
+		90D4103A24E9B6C60038C238 /* better_ganondorf.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 90D4103724E9B6C60038C238 /* better_ganondorf.pcm */; };
+		90D4103C24E9B76B0038C238 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D4103B24E9B76B0038C238 /* AudioController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +44,6 @@
 /* Begin PBXFileReference section */
 		90534C3324E5B65A0084F9A1 /* Loopi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loopi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90534C3624E5B65A0084F9A1 /* LoopiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopiApp.swift; sourceTree = "<group>"; };
-		90534C3824E5B65A0084F9A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		90534C3A24E5B65E0084F9A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90534C3D24E5B65E0084F9A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		90534C3F24E5B65E0084F9A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +53,16 @@
 		90534C4F24E5B65E0084F9A1 /* LoopiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoopiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90534C5324E5B65F0084F9A1 /* LoopiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopiUITests.swift; sourceTree = "<group>"; };
 		90534C5524E5B65F0084F9A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90534C6324E5D8950084F9A1 /* SongsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsRowView.swift; sourceTree = "<group>"; };
+		90534C6524E5D8CD0084F9A1 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		90534C6724E5DAA30084F9A1 /* testData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = testData.json; sourceTree = "<group>"; };
+		90534C6924E5DE210084F9A1 /* SongsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsListView.swift; sourceTree = "<group>"; };
+		90D4103124E5E1D90038C238 /* SongDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetail.swift; sourceTree = "<group>"; };
+		90D4103324E5FA5C0038C238 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		90D4103524E9B6C10038C238 /* better_ganondorf.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = better_ganondorf.wav; sourceTree = "<group>"; };
+		90D4103624E9B6C30038C238 /* better_ganondorf.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = better_ganondorf.mp3; sourceTree = "<group>"; };
+		90D4103724E9B6C60038C238 /* better_ganondorf.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = better_ganondorf.pcm; sourceTree = "<group>"; };
+		90D4103B24E9B76B0038C238 /* AudioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +113,20 @@
 		90534C3524E5B65A0084F9A1 /* Loopi */ = {
 			isa = PBXGroup;
 			children = (
+				90D4103624E9B6C30038C238 /* better_ganondorf.mp3 */,
+				90D4103724E9B6C60038C238 /* better_ganondorf.pcm */,
+				90D4103524E9B6C10038C238 /* better_ganondorf.wav */,
 				90534C3624E5B65A0084F9A1 /* LoopiApp.swift */,
-				90534C3824E5B65A0084F9A1 /* ContentView.swift */,
+				90534C6724E5DAA30084F9A1 /* testData.json */,
+				90534C6324E5D8950084F9A1 /* SongsRowView.swift */,
+				90534C6924E5DE210084F9A1 /* SongsListView.swift */,
+				90D4103124E5E1D90038C238 /* SongDetail.swift */,
+				90D4103324E5FA5C0038C238 /* UserData.swift */,
+				90534C6524E5D8CD0084F9A1 /* Song.swift */,
 				90534C3A24E5B65E0084F9A1 /* Assets.xcassets */,
 				90534C3F24E5B65E0084F9A1 /* Info.plist */,
 				90534C3C24E5B65E0084F9A1 /* Preview Content */,
+				90D4103B24E9B76B0038C238 /* AudioController.swift */,
 			);
 			path = Loopi;
 			sourceTree = "<group>";
@@ -233,8 +260,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90534C6824E5DAA40084F9A1 /* testData.json in Resources */,
 				90534C3E24E5B65E0084F9A1 /* Preview Assets.xcassets in Resources */,
+				90D4103924E9B6C60038C238 /* better_ganondorf.mp3 in Resources */,
+				90D4103A24E9B6C60038C238 /* better_ganondorf.pcm in Resources */,
 				90534C3B24E5B65E0084F9A1 /* Assets.xcassets in Resources */,
+				90D4103824E9B6C60038C238 /* better_ganondorf.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90534C3924E5B65A0084F9A1 /* ContentView.swift in Sources */,
+				90D4103C24E9B76B0038C238 /* AudioController.swift in Sources */,
+				90D4103424E5FA5C0038C238 /* UserData.swift in Sources */,
+				90534C6624E5D8CD0084F9A1 /* Song.swift in Sources */,
+				90D4103224E5E1D90038C238 /* SongDetail.swift in Sources */,
+				90534C6424E5D8950084F9A1 /* SongsRowView.swift in Sources */,
 				90534C3724E5B65A0084F9A1 /* LoopiApp.swift in Sources */,
+				90534C6A24E5DE210084F9A1 /* SongsListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

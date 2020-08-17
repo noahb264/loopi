@@ -11,8 +11,7 @@ import SwiftUI
 struct LoopiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SongsListView().environmentObject(UserData())
         }
     }
 }
-
