@@ -14,30 +14,63 @@ struct SongDetail: View {
     
     var body: some View {
         VStack {
+            Image(systemName: "person.3.fill")
+                .resizable()
+                .scaledToFit()
+                .padding(.bottom, 100.0)
+                
+            
             Text(song.title)
-            Text(self.userData.isPlaying.description)
-            Text(self.userData.sliderValue.description)
-            Button(action: {
-                self.userData.audioController.toggle()
-                self.userData.isPlaying.toggle()
-               
-            }) {
-                if self.userData.isPlaying {
-                    Image(systemName: "pause.fill")
-                        .resizable()
-                        .frame(width: 25, height: 25, alignment: .center)
-                } else {
-                    Image(systemName: "play.fill")
+            HStack {
+                Spacer()
+                Button(action: {
+                    userData.audioController.seekTo(time: 0.0)
+                }) {
+                    Image(systemName: "backward.end.fill")
                         .resizable()
                         .frame(width: 25, height: 25, alignment: .center)
                 }
+                Spacer()
+                Button(action: {
+                    self.userData.audioController.toggle()
+                }) {
+                    if self.userData.audioController.isPlaying() {
+                        Image(systemName: "pause.fill")
+                            .resizable()
+                            .frame(width: 25, height: 25, alignment: .center)
+                    } else {
+                        Image(systemName: "play.fill")
+                            .resizable()
+                            .frame(width: 25, height: 25, alignment: .center)
+                    }
+                        
+                }
+                Spacer()
+                Button(action: {
+                    self.userData.audioController.toggleRain()
+                }) {
+                    if self.userData.audioController.isRaining() {
+                        Image(systemName: "cloud.rain.fill")
+                            .resizable()
+                            .frame(width: 25, height: 25, alignment: .center)
+                    } else {
+                        Image(systemName: "cloud.rain")
+                            .resizable()
+                            .frame(width: 25, height: 25, alignment: .center)
+                    }
                     
+                }
+                Spacer()
             }
             Slider(value: $userData.sliderValue, in: 0...100, onEditingChanged: { _ in
                 self.userData.seek()
             })
             
-        }.navigationBarTitle(Text(song.title), displayMode: .inline)
+        }
+        .navigationBarTitle(Text(song.title), displayMode: .inline)
+        .onAppear(perform: {
+            userData.prepare(song: song)
+        })
     }
 }
 

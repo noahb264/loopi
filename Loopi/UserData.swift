@@ -11,8 +11,7 @@ import Combine
 
 final class UserData: ObservableObject {
     
-    @Published var isPlaying = false
-    @Published var sliderValue = 5.0
+    @Published var sliderValue = 0.0
     var audioController = AudioController.shared
     
     init() {
@@ -20,11 +19,19 @@ final class UserData: ObservableObject {
             self.sliderValue = (currentTime.seconds / duration.seconds) * 100
         }
         
-        audioController.scheduleBoundaryUpdate()
+        seek()
     }
     
     func seek() {
         audioController.seekTo(time: sliderValue)
+    }
+    
+    func prepare(song: Song) {
+        if let iCloudDocumentsURL = FileManager.default.url(forUbiquityContainerIdentifier: nil)?.appendingPathComponent("Documents") {
+            audioController.prepareToPlay(file: iCloudDocumentsURL.appendingPathComponent(song.title), song: song)
+        } else {
+            print("Bad!")
+        }
     }
     
 }

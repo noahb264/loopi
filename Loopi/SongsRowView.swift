@@ -14,8 +14,7 @@ struct SongsRowView: View {
         HStack {
             VStack(alignment: .leading) {
                 Text(song.title)
-                    .font(.title)
-                Text(song.artist)
+                Text(song.artist).font(.footnote)
             }
             Spacer()
         }
